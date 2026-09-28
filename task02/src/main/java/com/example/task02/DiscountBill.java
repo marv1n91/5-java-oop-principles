@@ -11,10 +11,6 @@ public class DiscountBill extends Bill {
         return discount;
     }
 
-    public double getDiscountPercent() {
-        return discount;
-    }
-
     @Override
     public long getPrice() {
         long price = super.getPrice();
@@ -23,9 +19,5 @@ public class DiscountBill extends Bill {
 
     public long getAbsoluteDiscount() {
         return super.getPrice() - getPrice();
-    }
-
-    public long getDiscountAmount() {
-        return getAbsoluteDiscount();
     }
 }
